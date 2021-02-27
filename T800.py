@@ -65,8 +65,8 @@ class MyClinet(discord.Client):
                 #spiler eins eingabe und ihn palyerinput speichern
 
                 if message.content.startswith("1"):
-                    
-                    message.content.startswith =
+
+                    playerInput []
 
 
                 await message.channel.send(str(playerInput[0]) + "|" + str(playerInput[1]) + "|" + str(playerInput[2]))
