@@ -1,4 +1,7 @@
-#Version 1.3
+#Version 1.3.1.1
+#Janik313
+#2021_02_28_00_01
+
 
 import discord
 import time
