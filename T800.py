@@ -1,6 +1,12 @@
 import discord
 import time
 
+token1 = ("ODEyMTExMzM3MTIyODI0MjEy.YC7_")
+token2 = ("nw.0psLbsWOrjMEOHRM4rbLexCsyR8")
+tokenEnd = token1 + token2
+
+
+
 #Testline
 
 # define the countdown func.
@@ -11,10 +17,6 @@ def countdown(t):
         print(timer, end="\r")
         time.sleep(1)
         t -= 1
-
-
-
-
 
 
 class MyClinet(discord.Client):
@@ -80,4 +82,5 @@ class MyClinet(discord.Client):
 
 
 client = MyClinet()
-client.run("ODEyMTExMzM3MTIyODI0MjEy.YC7_nw.sK3cf3M7Ldl0GNrgp1c-Gi9XeWA")
+client.run("ODEyMTExMzM3MTIyODI0MjEy.YC7_nw.0psLbsWOrjMEOHRM4rbLexCsyR8_123456789")
+
