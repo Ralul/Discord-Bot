@@ -1,3 +1,8 @@
+#Version 1.3.1.2
+#Ralul
+#2021_02_28_00_01
+
+
 import discord
 import time
 
