@@ -1,6 +1,7 @@
 import discord
 import time
 
+#Testline
 
 # define the countdown func.
 def countdown(t):
@@ -77,5 +78,6 @@ class MyClinet(discord.Client):
 
 
 
+
 client = MyClinet()
-client.run("ODEyMTExMzM3MTIyODI0MjEy.YC7_nw.QqzY9YMCXu_IqtcxM0RH66YtjFQ")
+client.run("ODEyMTExMzM3MTIyODI0MjEy.YC7_nw.sK3cf3M7Ldl0GNrgp1c-Gi9XeWA")
