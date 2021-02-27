@@ -1,10 +1,9 @@
 import discord
 import time
 
-token1 = ("ODEyMTExMzM3MTIyODI0MjEy.YC7_")
-token2 = ("nw.0psLbsWOrjMEOHRM4rbLexCsyR8")
-tokenEnd = token1 + token2
 
+Bananenbrot = str("ODEyMTExMzM3MTIyODI0MjEy.YC7_nw.0psLbsWOrjMEOHRM4rbLexCsyR8_LOL")
+Currywurst = Bananenbrot[:-4]
 
 
 #Testline
@@ -24,12 +23,14 @@ class MyClinet(discord.Client):
     async def on_ready(self):
         print("Ich habe mich Eingeloggt")
 
+
     #Reactions
     async def on_message (self,message):
         #Locking das ih nöd uf mis züg reagierö
         if message.author == client.user:
             return
         else:
+
 
 
             #Wenn Nachricht gepostet wird, dann drucke ich sie aus
@@ -76,11 +77,6 @@ class MyClinet(discord.Client):
                 return
 
 
-
-
-
-
-
 client = MyClinet()
-client.run("ODEyMTExMzM3MTIyODI0MjEy.YC7_nw.0psLbsWOrjMEOHRM4rbLexCsyR8_123456789")
+client.run(Currywurst)
 
