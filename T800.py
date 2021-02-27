@@ -1,3 +1,4 @@
+
 #Version 1.3.1.2
 #Ralul
 #2021_02_28_00_01
@@ -71,12 +72,12 @@ class MyClinet(discord.Client):
 
                 if message.content.startswith("1"):
 
-                    playerInput []
 
 
-                await message.channel.send(str(playerInput[0]) + "|" + str(playerInput[1]) + "|" + str(playerInput[2]))
-                await message.channel.send(str(playerInput[3]) + "|" + str(playerInput[4]) + "|" + str(playerInput[5]))
-                await message.channel.send(str(playerInput[6]) + "|" + str(playerInput[7]) + "|" + str(playerInput[8]))
+
+                    await message.channel.send(str(playerInput[0]) + "|" + str(playerInput[1]) + "|" + str(playerInput[2]))
+                    await message.channel.send(str(playerInput[3]) + "|" + str(playerInput[4]) + "|" + str(playerInput[5]))
+                    await message.channel.send(str(playerInput[6]) + "|" + str(playerInput[7]) + "|" + str(playerInput[8]))
 
 
 
