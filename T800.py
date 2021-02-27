@@ -1,3 +1,5 @@
+#Version 1.3
+
 import discord
 import time
 
