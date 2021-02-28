@@ -1,9 +1,7 @@
 
-#Version 1.3.1.2
-#Ralul
-#2021_02_28_00_01
-
-#The quick brown Fox jumps over the lazy Dog
+#Version 1.3.1.3
+#Janik
+#2021_02_28_15_15
 
 
 import discord
