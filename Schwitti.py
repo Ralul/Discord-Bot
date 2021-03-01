@@ -1,6 +1,6 @@
-#Version 1.1.2.1
+#Version 1.1.3.1
 #Ralul
-#2021_03_01_13_30
+#2021_03_01_15_45
 
 import discord
 import time
@@ -52,16 +52,13 @@ class MyClinet(discord.Client):
                 countdown(1)
                 legendsecondary = legendsecondary - 1
 
-                rest = 0
-                a_daily = ((legendsecondary / 86400) - (legendsecondary % 86400))
+                a_daily = legendsecondary // 86400
                 rest = legendsecondary % 86400
-                a_hourly = ((rest / 3600)-(rest % 3600))
+                a_hourly = rest // 3600
                 rest = rest % 3600
-                a_minutely = ((rest / 60) - (rest % 60))
+                a_minutely = rest // 60
                 rest = rest % 60
                 a_secondary = rest
-
-
 
 
                 print (a_daily,"¦",a_hourly,"¦",a_minutely,"¦",a_secondary)
