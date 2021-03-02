@@ -1,6 +1,6 @@
-#Version 1.1.3.1
+#Version 1.1.3.2
 #Ralul
-#2021_03_01_15_45
+#2021_03_01_18_50
 
 import discord
 import time
@@ -66,7 +66,7 @@ class MyClinet(discord.Client):
 
                 if a_hourly != message_hourly:
                     message_hourly = a_hourly
-                    await message.channel.send ("finally only", "left")
+                    await message.channel.send ("finally only left")
 
                 if (a_secondary + a_minutely + a_hourly + a_daily == 0):
                     message_hourly = a_hourly
