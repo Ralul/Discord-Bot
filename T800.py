@@ -1,97 +1,22 @@
 
-#Version 1.3.1.3
-#Janik
-#2021_02_28_15_15
-
-
 import discord
-import time
 
+intents = discord.Intents.default()
+intents.message_content = True
 
-Bananenbrot = str("ODEyMTExMzM3MTIyODI0MjEy.YC7_nw.0psLbsWOrjMEOHRM4rbLexCsyR8_LOL")
-Currywurst = Bananenbrot[:-4]
+client = discord.Client(intents=intents)
 
+@client.event
+async def on_ready():
+    print(f'We have logged in as {client.user}')
 
-#Testline
+@client.event
+async def on_message(message):
+    if message.author == client.user:
+        return
 
-# define the countdown func.
-def countdown(t):
-    while t:
-        mins, secs = divmod(t, 60)
-        timer = '{:02d}:{:02d}'.format(mins, secs)
-        print(timer, end="\r")
-        time.sleep(1)
-        t -= 1
+    if message.content.startswith('$hello'):
+        await message.channel.send('Hello!')
 
-
-class MyClinet(discord.Client):
-    #Einloggen
-    async def on_ready(self):
-        print("Ich habe mich Eingeloggt")
-
-
-    #Reactions
-    async def on_message (self,message):
-        #Locking das ih nöd uf mis züg reagierö
-        if message.author == client.user:
-            return
-        else:
-
-
-
-            #Wenn Nachricht gepostet wird, dann drucke ich sie aus
-            print("Da hat jemand etwas geschrieben" +" \ "+ str(message.author) +" \ "+ str(message.content))
-
-            #Help
-            if message.content.startswith("<help"):
-                await message.channel.send ("i'm t800 bot, you can me be use with < ")
-
-            if message.content.startswith("WaPaDuDeLiDu"):
-                await message.channel.send("ThinkOutSideTheBox55555")
-
-            #Wenn mich jemand Begrüsst
-            if message.content.startswith("<hello t800"):
-                await message.channel.send("Hello!!! my future slave")
-
-
-            if message.content.startswith("<tic tac toe t800"):
-                await message.channel.send("--------Tic Tac Toe--------")
-
-                # Tic Tac Toe game
-
-                playerInput = [1,2,3,4,5,6,7,8,9]
-
-
-                await message.channel.send(str(playerInput[0]) + "|" + str(playerInput[1]) + "|" + str(playerInput[2]))
-                await message.channel.send(str(playerInput[3]) + "|" + str(playerInput[4]) + "|" + str(playerInput[5]))
-                await message.channel.send(str(playerInput[6]) + "|" + str(playerInput[7]) + "|" + str(playerInput[8]))
-
-                await message.channel.send("select a field, player One ")
-
-                #spiler eins eingabe und ihn palyerinput speichern
-
-                if message.content.startswith("1"):
-
-
-
-
-                    await message.channel.send(str(playerInput[0]) + "|" + str(playerInput[1]) + "|" + str(playerInput[2]))
-                    await message.channel.send(str(playerInput[3]) + "|" + str(playerInput[4]) + "|" + str(playerInput[5]))
-                    await message.channel.send(str(playerInput[6]) + "|" + str(playerInput[7]) + "|" + str(playerInput[8]))
-
-
-
-
-                return
-
-            if message.content.startswith("<play"):
-                await message.channel.send("Playing...")
-
-                # Playing yt link
-
-                return
-
-
-client = MyClinet()
-client.run(Currywurst)
+client.run('')
 
